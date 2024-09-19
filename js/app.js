@@ -1,0 +1,62 @@
+$(document).ready(function(){
+    $('#hero-silder').owlCarousel({
+        loop:true,
+        margin:0,
+        nav:true,
+        dots:false,
+        navText:['PREV','NEXT'],
+        items:1,
+        smartSpeed:1000,
+        autoPlay:true,
+        autoplayTimeout:7000,
+        // autoplayHoverPause:false,
+
+        responsive:{
+            0:{
+            nav:false,
+            },
+            768:{
+               nav:true,
+            },
+            1000:{
+                
+            }
+        }
+    })
+    $('#project-silder').owlCarousel({
+        loop:true,
+        margin:24,
+        nav:true,
+        dots:false,
+        navText:['PREV','NEXT'],
+        autoPlay:true,
+        autoplayTimeout:7000,
+        smartSpeed:1000,
+        responsive:{
+            0:{
+           items:1,
+           nav:false,
+           margin:0,
+            },
+            768:{
+              items:2,
+            },
+            1140:{
+                items:2,
+                center:true,
+                dots:true,
+            }
+        }
+    })
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:0,
+        nav:false,
+        dots:true,
+        items:1,
+        smartSpeed:800,
+        autoPlay:true,
+        autoplayTimeout:7000,
+      
+    })
+});
